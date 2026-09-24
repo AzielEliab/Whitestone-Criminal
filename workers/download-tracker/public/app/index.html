@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whitestone Criminal</title>
+  <meta name="description" content="Ephemeral pro se criminal-procedure advisor. Session-only memory; wipe on close. Allowlisted court, public-defender, and self-help links. Educational.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#note">Skip to notes</a>
+  <div class="wrap">
+    <header>
+      <p class="kicker">Educational</p>
+      <h1>Whitestone Criminal</h1>
+      <p class="lede">Ephemeral pro se criminal-procedure advisor. Notes stay in this tab until you wipe them or close the tab.</p>
+    </header>
+    <main>
+      <section aria-labelledby="ask-heading">
+        <h2 id="ask-heading">Start from a question</h2>
+        <div id="routes" role="radiogroup" aria-label="Question"></div>
+        <div id="detail"></div>
+      </section>
+      <section aria-labelledby="notes-heading">
+        <h2 id="notes-heading">Notes in this tab</h2>
+        <label for="note">Court name, case number, dates, and questions you want to ask a lawyer</label>
+        <textarea id="note" maxlength="8000"></textarea>
+        <button type="button" id="wipe">Wipe notes</button>
+        <p id="status" role="status"></p>
+      </section>
+      <section aria-labelledby="file-heading">
+        <h2 id="file-heading">Text file on this computer</h2>
+        <label for="file">Choose a .txt, .md, or .csv file. It is shown here and is not uploaded.</label>
+        <input id="file" type="file" accept=".txt,.md,.csv,text/plain,text/markdown,text/csv">
+        <div id="upload-out"></div>
+      </section>
+      <section aria-labelledby="links-heading">
+        <h2 id="links-heading">Research links in this copy</h2>
+        <ul id="links"></ul>
+        <p>A public defender, or a lawyer you hire, represents you. This page stores notes and opens these links. Nothing on this page is sent to a language model.</p>
+      </section>
+    </main>
+    <footer>
+      <p>Aziel Eliab</p>
+    </footer>
+  </div>
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "whitestone-criminal",
+  "private": true,
+  "type": "module",
+  "description": "Ephemeral pro se criminal-procedure advisor. Session-only memory; wipe on close. Allowlisted court, public-defender, and self-help research. Educational.",
+  "author": "Aziel Eliab",
+  "license": "Apache-2.0",
+  "scripts": {
+    "package": "node scripts/package-release.mjs",
+    "test": "node --test app/logic.test.mjs scripts/contrast.test.mjs workers/download-tracker/scripts/verify.mjs",
+    "preview": "node scripts/preview-landing.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
