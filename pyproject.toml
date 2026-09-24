@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whitestone-criminal"
+# 0.0.0 marks this unreleased stub. No product release is claimed.
+version = "0.0.0"
+description = "Welcome stub. The package is not ready yet."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Aziel Eliab" }]
+
+[project.scripts]
+whitestone-criminal = "whitestone_criminal.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
